@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fetch gyakorlas</title>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <form>
+        <input type="text" id="nevInput" placeholder="Név" class="form-control" style="margin-top: 10px;"><br>
+        <input type="number" id="kartyaszamInput" placeholder="Kártyaszám" class="form-control"><br>
+        <input type="number" id="cvvInput" placeholder="CVV" class="form-control">
+      </form>
+      <button id="ujadat" class="btn btn-outline-primary"
+        style="margin-top: 20px; margin-bottom: 60px;">Hozzáad</button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Név</th>
+          <th>Kártyaszám</th>
+          <th>CVV</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody id="adatok">
+
+      </tbody>
+    </table>
+
+    <p id="errorMessage"></p>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
